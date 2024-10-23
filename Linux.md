@@ -66,3 +66,13 @@ ls -la
 
 > '.'의 의미는 숨겨져 있다는 의미이다.
 
+
+# shortcuts
+## start terminal
+
+> window + T
+
+## show applications
+
+> window + A
+
