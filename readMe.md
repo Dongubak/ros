@@ -1,3 +1,18 @@
+## 현재 해결하지 못한 오류
+ros2가 연결이 완료되었지만 PWM신호를 만들지 못함
+단순히 GPIO 포트에서 High 하거나 Low하는 신호는 정상적으로 됨
+jetson-io에서 configuration 수정을 하면 된다고 하지만 jetson-io가 켜지지 않고
+바로 꺼지는 오류가 발생함
+
+- 이를 해결하기 위해 커뮤니티를 탐색하여 해결방법들을 적용해봤지만 해결되지 않음
+
+- 현재 최종적인 해결법은 NVIDIA SDK Manager를 사용하여 Jetpack 및 관련 소프트웨어 설치 Jetson
+   초기화 방법이다.
+
+관련사진은 다음과 같다
+
+![alt text](image-9.png)
+
 # mac os에서 원격 접속 방법
 1. jetson xavier 에서 ifconfig로 ip확인
 2. 확인된 ip를 이용하여 연결
@@ -7,7 +22,7 @@ username@ip
 3. vscode에서 ssh연결시 동일한 방법(단 board가 로그오프되면 연결이 종료됨)
 
 
-# ros 기본 명령어 모음
+# ros 기본 명령어 모음 
 
 ## ros2 버전확인 방법
 
@@ -30,7 +45,7 @@ All 4 checks passed
 
 ```bash
 ros2 run demo_nodes_cpp talker
-```
+``
 
 ```bash
 ros2 run demo_nodes_cpp listener
